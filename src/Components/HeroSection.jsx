@@ -1,6 +1,7 @@
 // components/HeroSection.jsx
 import React from 'react';
 import { Play, ArrowRight, Briefcase } from 'lucide-react';
+import BannerImage from "../assets/banner.png";
 
 const HeroSection = () => {
   return (
@@ -8,8 +9,19 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Play className="w-4 h-4" /> Watch intro video first
+            <Play className="w-4 h-4" /> 
+            <span>Start Your Journey Today</span>
           </div>
+          
+          {/* Banner Image */}
+          <div className="mb-8 flex justify-center">
+            <img 
+              src={BannerImage} 
+              alt="English Learning Banner" 
+              className="rounded-2xl shadow-lg max-w-full h-auto"
+            />
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-extrabold text-slate-800 dark:text-white mb-6 leading-tight">
             A Thousand Miles Journey<br />
             <span className="text-indigo-600 dark:text-indigo-400">Starts with First Step</span>
